@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vue-simple-demo</title>
+</head>
+<body>
+<div id="app">
+    <h1>{{ a }}</h1>
+    <h1>{{ b }}</h1>
+</div>
+<script src="mvvm/Dep.js"></script>
+<script src="mvvm/Observe.js"></script>
+<script src="mvvm/Watcher.js"></script>
+<script src="mvvm/Compile.js"></script>
+<script src="mvvm/myVue.js"></script>
+<script>
+    const myVue = new MyVue({
+        el: '#app',
+        data: {
+            a: 'This is Origin',
+            b: 'Nothing'
+        }
+    });
+
+    window.setTimeout(function () {
+        myVue.a = 'Hello';
+        myVue.b = 'Changed';
+    }, 3000);
+</script>
+</body>
+</html>
