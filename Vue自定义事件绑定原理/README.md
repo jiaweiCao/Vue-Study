@@ -1,5 +1,7 @@
 ## Vue自定义事件绑定，事件触发
 
+转载请注明出处https://github.com/jiaweiCao/Vue-Study
+
 众所周知，在vue中你如果想调用原生事件，则在事件后面加一个.native修饰符，vue就可以帮你去调用原生的addEventListener。
 
 那么Vue它自己的自定义事件是如何实现的呢？
